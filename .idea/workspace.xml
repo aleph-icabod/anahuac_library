@@ -5,23 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4feed6f-730b-41ae-b703-b4cac041abab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mx/anahuac/programacion_multimedia/Comic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mx/anahuac/programacion_multimedia/Libro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mx/anahuac/programacion_multimedia/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mx/anahuac/programacion_multimedia/Manga.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mx/anahuac/programacion_multimedia/PanelComic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mx/anahuac/programacion_multimedia/PanelLibro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/anahuac/programacion_multimedia/Comic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/anahuac/programacion_multimedia/Comic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/anahuac/programacion_multimedia/Libro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/anahuac/programacion_multimedia/Libro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/anahuac/programacion_multimedia/PanelComic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/anahuac/programacion_multimedia/PanelComic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/anahuac/programacion_multimedia/PanelLibro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/anahuac/programacion_multimedia/PanelLibro.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +32,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.sdkman/candidates/java/8.0.292-zulu/zulu-8.jdk/Contents/Home/src.zip!/java/awt/GridLayout.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.sdkman/candidates/java/8.0.292-zulu/zulu-8.jdk/Contents/Home/src.zip!/javax/swing/JSpinner.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -55,7 +48,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
   <component name="RunManager">
@@ -88,5 +82,9 @@
       <updated>1677546434146</updated>
     </task>
     <servers />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

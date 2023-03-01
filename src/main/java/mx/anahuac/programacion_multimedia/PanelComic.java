@@ -3,49 +3,37 @@ package mx.anahuac.programacion_multimedia;
 import javax.swing.*;
 import java.awt.*;
 
-public class PanelComic extends JPanel{
-    private JTextField campoNombre;
-    private JTextField campoAutor;
-    private JTextField campoEditorial;
-    private JTextField campoPrecio;
-    private JTextField campoInventario;
-    private JTextField campoTipoColoreado;
+public class PanelComic extends PanelLibro{
 
-
-    public PanelComic() {
+    private JCheckBox coloreado;
+    public PanelComic(){
         super();
-        this.campoNombre = new JTextField();
-        this.campoAutor = new JTextField();
-        this.campoEditorial = new JTextField();
-        this.campoPrecio = new JTextField();
-        this.campoInventario = new JTextField();
-        this.campoTipoColoreado = new JTextField();
+    }
 
-        BoxLayout layout=new BoxLayout(this,BoxLayout.Y_AXIS);
-        this.setLayout(layout);
+    public void iniciarComponentes(){
+        super.iniciarComponentes();
+        this.coloreado=new JCheckBox("A color");
+    }
 
-        JLabel tituloPanel=new JLabel("Panel comics");
+    @Override
+    public void dibujar() {
+        super.dibujar();
+        this.add(this.coloreado);
+    }
 
-        tituloPanel.setForeground(Color.GREEN);
+    @Override
+    public void ejecutarGuardar() {
+        String nombre =getCampoNombre().getText();
+        String autor = getCampoAutor().getText();
+        String editorial = getCampoEditorial().getText();
+        Integer precio = (Integer)getCampoPrecio().getValue();
+        Integer inventario = (Integer) getCampoInventario().getValue();
+        String tipoColoreado=coloreado.getText();
 
-        this.add(tituloPanel);
-        this.add(new JLabel("Ingresa Nombre"));
-        this.add(this.campoNombre);
-        this.add(new JLabel("Ingresa Autor"));
-        this.add(this.campoAutor);
-        this.add(new JLabel("Ingresa Editorial"));
-        this.add(this.campoEditorial);
-        this.add(new JLabel("Ingresa Precio"));
-        this.add(this.campoPrecio);
-        this.add(new JLabel("Ingresa Inventario"));
-        this.add(this.campoInventario);
-        this.add(new JLabel("Ingresa tipo coloreado"));
-        this.add(this.campoTipoColoreado);
+        Comic nuevoLibro = new Comic(1, nombre, autor, editorial, new Float(precio), inventario,tipoColoreado);
 
-        JButton btnGuardar=new JButton("Guardar");
-        JButton btnCancelar=new JButton("Cancelar");
-
-        this.add(btnGuardar);
-        this.add(btnCancelar);
+        getListaDeLibros().add(nuevoLibro);
+        System.out.println(getListaDeLibros().size());
+        reset();
     }
 }

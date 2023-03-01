@@ -5,14 +5,14 @@ public class Libro {
     private String nombre;
     private String autor;
     private String editorial;
-    private int precio;
+    private float precio;
     private int inventario;
 
     public Libro(){
 
     }
 
-    public Libro(int id,String name, String autor,String editorial, int precio,int inventario){
+    public Libro(int id,String name, String autor,String editorial, float precio,int inventario){
         this.id=id;
         this.nombre=name;
         this.autor=autor;
@@ -59,11 +59,11 @@ public class Libro {
         this.editorial = editorial;
     }
 
-    public int getPrecio() {
+    public float getPrecio() {
         return precio;
     }
 
-    public void setPrecio(int precio) {
+    public void setPrecio(float precio) {
         this.precio = precio;
     }
 
@@ -73,5 +73,10 @@ public class Libro {
 
     public void setInventario(int inventario) {
         this.inventario = inventario;
+    }
+
+    @Override
+    public String toString() {
+        return this.id+"-"+this.nombre;
     }
 }
