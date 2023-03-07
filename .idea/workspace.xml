@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4feed6f-730b-41ae-b703-b4cac041abab" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mx/anahuac/programacion_multimedia/Comic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/anahuac/programacion_multimedia/Comic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mx/anahuac/programacion_multimedia/Libro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/anahuac/programacion_multimedia/Libro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mx/anahuac/programacion_multimedia/PanelComic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/anahuac/programacion_multimedia/PanelComic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mx/anahuac/programacion_multimedia/PanelLibro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/anahuac/programacion_multimedia/PanelLibro.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
