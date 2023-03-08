@@ -30,14 +30,14 @@ public class Main {
         panelOpciones.add(botonComics);
         panelOpciones.add(botonManga);
 
-        panelOpciones.setBackground(Color.BLUE);
+        panelOpciones.setBackground(Color.getHSBColor(100,50,20));
         ventana.add(panelOpciones);
 
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JPanel panelContenido=new JPanel();
         panelContenido.add(new JLabel("SELECCIONA UNA OPCION"));
-        panelContenido.setBackground(Color.RED);
+        panelContenido.setBackground(Color.getHSBColor(50,90,40));
 
         ventana.add(panelContenido);
         botonLibros.addMouseListener(new MouseAdapter() {
@@ -45,7 +45,8 @@ public class Main {
             public void mouseClicked(MouseEvent e) {
                 ventana.getContentPane().remove(1);
                 ventana.add(panelLibros);
-                ventana.repaint();
+                ventana.getContentPane().repaint();
+                ventana.pack();
             }
         });
 
@@ -55,7 +56,8 @@ public class Main {
             public void mouseClicked(MouseEvent e) {
                 ventana.getContentPane().remove(1);
                 ventana.add(panelComics);
-                ventana.repaint();
+                ventana.getContentPane().repaint();
+                ventana.pack();
             }
         });
 

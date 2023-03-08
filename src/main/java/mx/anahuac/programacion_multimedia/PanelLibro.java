@@ -2,6 +2,8 @@ package mx.anahuac.programacion_multimedia;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
@@ -18,6 +20,8 @@ public class PanelLibro extends JPanel {
     private List<Libro> listaDeLibros;
 
     public JList listaVisual;
+
+    public JComboBox comboBox;
 
     public PanelLibro() {
         super();
@@ -37,9 +41,36 @@ public class PanelLibro extends JPanel {
         this.campoPrecio = new JSpinner();
         this.campoInventario = new JSpinner();
         this.listaVisual=new JList();
+
+        this.listaDeLibros.add(new Libro(1,"Libro 1", "Autor 1"));
+        this.listaDeLibros.add(new Libro(2,"Libro 2", "Autor 2"));
+        this.listaDeLibros.add(new Libro(3,"Libro 3", "Autor 3"));
+        this.listaDeLibros.add(new Libro(4,"Libro 4", "Autor 4"));
+        this.listaDeLibros.add(new Libro(5,"Libro 5", "Autor 5"));
+
         this.listaVisual.setListData(this.listaDeLibros.toArray());
 
 
+
+        String s1[] = {
+                "",
+                "Libro 1",
+                "Libro 2",
+                "Libro 3",
+                "Libro 4",
+                "Libro 5",
+        };
+
+        this.comboBox=new JComboBox(listaDeLibros.toArray());
+
+        this.comboBox.addItemListener(new ItemListener() {
+            @Override
+            public void itemStateChanged(ItemEvent e) {
+                Libro opcionSeleccionada=(Libro)comboBox.getSelectedItem();
+                System.out.println("Opcion seleccionada: "+opcionSeleccionada);
+                System.out.println("EL autor es: "+opcionSeleccionada.getAutor());
+            }
+        });
     }
 
     public void dibujar(){
@@ -63,6 +94,8 @@ public class PanelLibro extends JPanel {
         this.add(this.campoPrecio);
         this.add(new JLabel("Ingresa Inventario"));
         this.add(this.campoInventario);
+
+        this.add(this.comboBox);
         this.add(this.listaVisual);
     }
 
