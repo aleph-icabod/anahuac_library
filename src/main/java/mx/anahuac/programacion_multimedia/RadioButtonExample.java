@@ -11,6 +11,7 @@ public class RadioButtonExample {
         f = new JFrame();
         JRadioButton r1 = new JRadioButton("A) Male");
         JRadioButton r2 = new JRadioButton("B) Female");
+
         r1.setBounds(75, 50, 100, 30);
         r2.setBounds(75, 100, 100, 30);
         JCheckBox ch1=new JCheckBox("Otro");
@@ -19,6 +20,12 @@ public class RadioButtonExample {
         bg.add(r1);
         bg.add(r2);
         bg.add(ch1);
+
+        //para poder usar la forma generica de obtener el elemento seleccionado
+        r1.setActionCommand("male");
+        r2.setActionCommand("female");
+        ch1.setActionCommand("otro");
+
         f.add(r1);
         f.add(r2);
         f.add(ch1);
@@ -35,6 +42,10 @@ public class RadioButtonExample {
                 if(r2.isSelected()){
                     JOptionPane.showMessageDialog(null,"You are Female.");
                 }
+
+                //opcion mas generica para multiples opciones
+                String seleccion=bg.getSelection().getActionCommand();
+                System.out.println(seleccion);
             }
         });
         f.add(button);
